@@ -1,13 +1,34 @@
 /* General */
+
+@font-face {
+  font-family: Monument;
+  src: url(../fonts/MonumentExtended/MonumentExtended-Light.otf);
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: Monument;
+  src: url(../fonts/MonumentExtended/MonumentExtended-Regular.otf);
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: ArnoPro;
+  src: url(../fonts/ArnoPro/ArnoPro-Regular.otf);
+  font-style: normal;
+  font-weight: 300;
+}
+
 body {
-  font-family: "Atkinson Hyperlegible", sans-serif;
-  color: white;
+  font-family: ArnoPro;
+  color: rgb(0, 0, 0);
   margin: 0;
-  background-color: rgb(51, 51, 51);
+  background-color: white;
 }
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 .socialIcon {
@@ -15,15 +36,22 @@ a {
 }
 
 h2 {
+  font-family: Monument;
+  font-weight: 100;
   margin-bottom: 2em;
+  text-align: center;
 }
 
 /* Header */
 header {
-  background-color: rgb(255, 133, 255);
-  padding: 1em 10em;
+  background-image: linear-gradient(#f41efb, #ffffff00);
+  padding: 1em;
   display: flex;
+  align-items: flex-start;
+  height: 5em;
   justify-content: space-between;
+  font-family: Monument;
+  font-weight: 100;
 }
 
 #logoContainer {
@@ -32,7 +60,7 @@ header {
 }
 
 #logo {
-  width: 7em;
+  width: 5.5em;
 }
 
 header nav {
@@ -41,7 +69,8 @@ header nav {
 }
 
 nav ul {
-  margin: 0;
+  margin: 0em 0em 0em 1em;
+  padding: 0em;
   display: flex;
   align-items: center;
 }
@@ -49,119 +78,176 @@ nav ul {
 .navLi {
   display: inline-block;
   position: relative;
-  font-size: 1em;
-  padding: 0.5em;
+  font-size: 0.5em;
+  padding: 0.2em;
+  margin: 0em 0.2em;
 }
 
-.dropDownList {
+.navLi:hover {
+  border-bottom: 0.15em solid black;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.navLi a {
+  color: black;
+  background-color: none;
+}
+
+/* .dropDownList {
   position: absolute;
   display: none;
-  padding: 0.5em 0.5em 0em 0.5em;
+  margin: 0em;
 }
 
 .dropDownList li {
   display: block;
-  font-size: 0.8em;
-  padding-bottom: 0.3em;
+  font-size: 0.6em;
+  padding: 0.6em;
+  text-align: center;
+}
+.dropDownList li:hover {
+  border-bottom: 0.15em solid black;
 }
 
 .dropDownList li a {
-  color: rgb(255, 133, 255);
-}
+  color: black;
+  font-size: 1.2em;
+  font-weight: 300;
+} */
 
 .navLi:hover ul {
   display: block;
-  background-color: white;
+  top: 1.7em;
 }
 
-.navLi a {
-  color: white;
+.twitchButtonLi {
+  display: inline-block;
+  position: relative;
+  font-size: 0.8em;
+  margin: 0em 0.2em;
 }
 
 .twitchButton {
-  background-color: blue;
-  padding: 0.5em 2em;
+  background-color: #17d1f8;
+  padding: 0.7em 2.5em;
   border-radius: 0.4em;
   display: flex;
   align-items: center;
-  color: white;
+  color: black;
+}
+
+.twitchButton:hover {
+  transition: all 0.3s;
+  transform: translate(0em, -0.3em) scale(1.02);
 }
 
 /* Main */
 main {
-  padding: 0em 10em;
+  padding: 0em 1em;
 }
 
 /* Footer */
 footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgb(255, 133, 255);
-  padding: 1em 10em;
-  margin-top: 4em;
-  color: white;
+  display: block;
+  margin-top: 2em;
+  padding: 4em 1em 0em 1em;
+  height: 7em;
+  background-image: linear-gradient(to top, #17d1f8, #d9c9a800);
+  color: black;
 }
 
 #copyrightFooter p {
   font-size: 0.8em;
-  margin: 0em;
+  text-align: center;
+  margin-bottom: 1.5em;
 }
 
 #socialFooter {
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-gap: 1em;
+  justify-content: center;
   align-items: center;
+}
+
+#socialFooter a {
+  margin: 0.5em;
 }
 
 /* Index */
 
 #welcomeSection {
-  margin: 4em 0em;
-  display: flex;
+  margin: 1em 0em;
+  display: block;
   justify-content: space-between;
   align-items: center;
 }
 
+#welcomeSection div {
+  margin-bottom: 1em;
+}
+
 h1 {
-  font-size: 3em;
+  font-family: Monument;
+  font-weight: 100;
+  font-size: 2em;
   letter-spacing: 0.2em;
   margin: 0em;
 }
 
 .goLive {
-  display: inline;
+  font-family: Monument;
+  font-weight: 100;
+  display: block;
+  text-align: center;
+}
+
+.goLive:hover {
+  transition: all 0.3s;
+  transform: translate(0em, -0.3em) scale(1.02);
+}
+
+#welcomeSection iframe {
+  width: 100%;
+  height: 225px;
 }
 
 .articlesSection {
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
-  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto auto auto;
   grid-gap: 1em;
-  justify-content: space-between;
 }
 
 .indexArticle {
   display: block;
   text-align: center;
   padding: 0.5em;
-  border: solid 0.1em white;
 }
 
 .teamProfile {
   width: 8em;
 }
+.teamProfile:hover {
+  transition: all 0.3s;
+  transform: translate(0em, -0.3em) scale(1.02);
+}
 
 h3 {
-  font-size: 1.2em;
+  font-family: Monument;
+  font-weight: 100;
+  font-size: 1em;
   margin: 0.1em;
   text-align: center;
   text-transform: uppercase;
-  color: rgb(255, 133, 255);
+  color: #17d1f8;
 }
 
 h4 {
+  font-family: Monument;
+  font-weight: 100;
   font-size: 1em;
   margin: 0.1em;
   text-align: center;
@@ -171,13 +257,16 @@ h5 {
   font-size: 1em;
   margin: 0.1em;
   text-align: center;
-  font-style: italic;
 }
 
 .indexArticle p {
   font-size: 1em;
   margin: 0.1em;
   text-align: center;
+}
+
+p {
+  font-size: 1.5em;
 }
 
 /* Calendar */
@@ -192,16 +281,40 @@ h5 {
   border-radius: 0.4em;
 }
 
+.calendarDay {
+  margin: 2em 0em;
+  padding: 1em;
+  border: 0.2em solid rgba(255, 133, 255, 0.5);
+  border-radius: 0.4em;
+}
+
+.calendarDay h3 {
+  text-align: left;
+  font-size: 1.5em;
+}
+
+.calendarDay h4 {
+  font-size: 1.5em;
+  margin: 0.5em 0em;
+}
+.calendarDay h6 {
+  text-transform: uppercase;
+  font-size: 1em;
+  margin: 0em;
+}
+
 table {
+  display: none;
   margin: 4em 0em;
   border: none;
 }
 
 th {
-  background-color: rgb(255, 133, 255);
   border: none;
-  color: white;
+  color: black;
   text-transform: uppercase;
+  font-family: Monument;
+  color: #17d1f8;
 }
 
 td {
@@ -217,15 +330,30 @@ td {
 
 .socialMediaSection h3 {
   margin: 1em 0em;
+  color: black;
+  font-size: 1em;
 }
 
-.socialMediaSection div {
-  display: flex;
-  justify-content: space-between;
+.socialMediaSection h3 a {
+  background-color: #17d1f8;
+  border-radius: 0.4em;
+  padding: 0.4em 0.8em;
 }
 
-.instagramPost {
-  width: 30%;
+.InstagramDiv {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 1em;
+}
+
+.YoutubeDiv {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 1em;
+}
+
+.YoutubeDiv iframe {
+  width: 100%;
 }
 
 .instagramPostImage {
@@ -236,15 +364,16 @@ td {
 
 .pressArticleSection {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto;
   grid-gap: 2em;
 }
 
 .pressArticle {
-  background-color: white;
   padding: 1em 2em;
   position: relative;
   margin-left: 1.5em;
+  border: 0.2em solid rgba(255, 133, 255, 0.5);
+  border-radius: 0.4em;
 }
 
 .pressIcon {
@@ -262,24 +391,24 @@ td {
 
 .pressMedia {
   text-align: left;
-  color: rgb(51, 51, 51);
-  margin: 0em;
+  color: rgb(0, 0, 0);
+  margin: 1em 0em;
 }
 
 .pressArticleAnchor {
   font-size: 0.8em;
-  font-weight: bold;
+  background-color: #17d1f8;
+  border-radius: 0.4em;
+  padding: 0.2em 0.6em;
 }
 
 /* Merch */
 
 #store {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto auto auto;
   grid-gap: 1em;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 4em;
 }
 
 .merchArticle {
@@ -296,5 +425,203 @@ td {
 }
 
 #raffle {
-  display: inline-block;
+  display: none;
+}
+
+/* ----MediaQueries---- */
+
+/* --Tablet-- */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Header */
+  header {
+    padding: 1.5em;
+  }
+
+  .navLi {
+    font-size: 1em;
+  }
+
+  /* Footer */
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #copyrightFooter p {
+    margin: 0em;
+    text-align: left;
+  }
+
+  #socialFooter {
+    grid-gap: 1em;
+  }
+
+  #socialFooter a {
+    margin: 0em;
+  }
+
+  /* Index */
+  #welcomeSection {
+    display: flex;
+  }
+
+  .goLive {
+    display: inline-block;
+  }
+
+  #welcomeSection iframe {
+    width: 400px;
+    height: 225px;
+  }
+
+  .articlesSection {
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+  }
+
+  /* Calendar */
+
+  .calendarMobile {
+    display: none;
+  }
+
+  table {
+    display: table;
+  }
+
+  /* SocialMedia */
+  .YoutubeDiv {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1em;
+  }
+
+  /* Press */
+
+  .pressArticleSection {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 2em;
+  }
+
+  /* Merch */
+  #store {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 1em;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4em;
+  }
+}
+
+/* --Desktop-- */
+@media (min-width: 992px) {
+  /* Header */
+  header {
+    padding: 1em 10em;
+  }
+
+  #logo {
+    width: 7em;
+  }
+
+  .navLi {
+    font-size: 1em;
+  }
+
+  /* Main */
+  main {
+    padding: 0em 10em;
+  }
+
+  /* Footer */
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0em 10em 2em 10em;
+    margin-top: 4em;
+  }
+
+  #copyrightFooter p {
+    margin: 0em;
+    text-align: left;
+  }
+
+  #socialFooter {
+    grid-gap: 1em;
+  }
+
+  #socialFooter a {
+    margin: 0em;
+  }
+
+  /* Index */
+  #welcomeSection {
+    margin: 4em 0em;
+    display: flex;
+  }
+
+  #welcomeSection div {
+    margin-bottom: 0em;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  .goLive {
+    display: inline-block;
+  }
+
+  #welcomeSection iframe {
+    width: 560px;
+    height: 315px;
+  }
+
+  .articlesSection {
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  /* Calendar */
+
+  .calendarMobile {
+    display: none;
+  }
+
+  table {
+    display: table;
+  }
+
+  /* SocialMedia */
+  .YoutubeDiv {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1em;
+  }
+
+  /* Press */
+
+  .pressArticleSection {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 2em;
+  }
+
+  /* Merch */
+  #store {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 1em;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4em;
+  }
 }
