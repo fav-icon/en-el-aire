@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>En el aire</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="index.html">
+          <img id="logo" src="../images/logo.png" />
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li class="navLi">
+            <a href="../index.html">INICIO</a>
+          </li>
+          <li class="navLi">
+            <a href="calendar.html">CALENDARIO</a>
+          </li>
+          <li class="navLi">
+            <a href="socialmedia.html">REDES</a>
+          </li>
+          <li class="navLi">
+            <a href="press.html">PRENSA</a>
+          </li>
+          <li class="navLi">
+            <a href="merch.html">MERCH</a>
+          </li>
+          <li class="navLi">
+            <a href="https://www.twitch.tv/enelaire" target="_blank">
+              <img class="socialicon" src="../images/twitchicon.png" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <table border="1" cellpadding="15px">
+        <tr>
+          <th>Cámara</th>
+          <th>Micrófono</th>
+          <th>Auriculares</th>
+          <th>Monitor</th>
+          <th>Teclado</th>
+          <th>Mouse</th>
+        </tr>
+        <tr>
+          <td>Logitech C922</td>
+          <td>HyperX QuadCast</td>
+          <td>Logitech G432</td>
+          <td>Samsung S22f350fh</td>
+          <td>Red Dragon Yama K550</td>
+          <td>LogitechG403 Hero</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>Philips 193V</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr></tr>
+      </table>
+      <form method="POST">
+        <fieldset>
+          <legend>Participá por una remera del canal</legend>
+          <p>
+            <input type="text" id="name" name="name" placeholder="Nombre" />
+            <label for="name" id="name" name="name">Nombre</label>
+          </p>
+          <p>
+            <input
+              type="text"
+              id="lastname"
+              name="lastname"
+              placeholder="Apellido"
+            />
+            <label for="lastname" id="lastname" name="lastname">Apellido</label>
+          </p>
+          <p>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="nombre@ejemplo.com"
+              required
+            />
+            <label for="email" id="email" name="email">Dejanos tu mail</label>
+          </p>
+          <p>
+            <select>
+              <option value="item_remeraaire">Remera aire</option>
+              <option value="item_remerabrisa">Remera brisa</option>
+              <option value="item_remeravuelo">Remera vuelo</option>
+            </select>
+            <label for="item" id="item" name="item">Elegí tu modelo</label>
+          </p>
+          <p>
+            <input type="radio" id="size_xs" name="size" value="xs" />
+            <label for="size_xs">XS</label>
+            <input type="radio" id="size_s" name="size" value="s" />
+            <label for="size_s">S</label>
+            <input type="radio" id="size_m" name="size" value="m" />
+            <label for="size_m">M</label>
+            <input type="radio" id="size_l" name="size" value="l" />
+            <label for="size_l">L</label>
+            <input type="radio" id="size_xl" name="size" value="xl" />
+            <label for="size_xl">XL</label>
+          </p>
+          <input type="submit" value="Participar" />
+          <input type="reset" value="Borrar" />
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <p>Copyright 2021. En El Aire. Todos los derechos reservados</p>
+      <a
+        href="https://www.youtube.com/channel/UCRuW6Tz9E4fczGNhjI15z5A"
+        target="_blank"
+      >
+        <img class="socialicon" src="images/youtubeicon.png" />
+      </a>
+      <a href="https://www.instagram.com/enelaire.tv/" target="_blank">
+        <img class="socialicon" src="images/instagramicon.png" />
+      </a>
+      <a href="https://www.twitch.tv/enelaire" target="_blank">
+        <img class="socialicon" src="../images/twitchicon.png" />
+      </a>
+    </footer>
+  </body>
+</html>
