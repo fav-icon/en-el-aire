@@ -15,11 +15,9 @@
   </head>
   <body>
     <header>
-      <div>
-        <a href="../index.html">
-          <img id="logo" src="../images/logo.png" />
-        </a>
-      </div>
+      <a id="logoContainer" href="../index.html">
+        <img id="logo" src="../images/logo.png" />
+      </a>
       <nav>
         <ul>
           <li class="navLi">
@@ -36,9 +34,18 @@
           </li>
           <li class="navLi">
             <a href="merch.html">MERCH</a>
+            <ul class="dropDownList">
+              <li><a href="merch.html#store">TIENDA</a></li>
+              <li><a href="merch.html#raffle">SORTEO</a></li>
+            </ul>
           </li>
           <li class="navLi">
-            <a href="https://www.twitch.tv/enelaire" target="_blank">
+            <a
+              class="twitchButton"
+              href="https://www.twitch.tv/enelaire"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img class="socialIcon" src="../images/twitchicon.png" />
             </a>
           </li>
@@ -47,8 +54,7 @@
     </header>
     <main>
       <h2>¿A VER QUÉ DICEN OTRES DE NOSOTRES?</h2>
-      <section>
-        <!--las siguientes imágenes todavía no están en la carpeta. las invoco imaginariamente-->
+      <section class="pressArticleSection">
         <article class="pressArticle">
           <img
             class="pressIcon"
@@ -58,8 +64,12 @@
           <p class="quote">
             "Lorem ipsum dolor sit amet consectetur adipisicing elit."
           </p>
-          <h4>LA NACIÓN</h4>
-          <a href="https://www.lanacion.com.ar/" target="_blank"
+          <h4 class="pressMedia">LA NACIÓN</h4>
+          <a
+            class="pressArticleAnchor"
+            href="https://www.lanacion.com.ar/"
+            target="_blank"
+            rel="noopener noreferrer"
             >Leé la nota acá</a
           >
         </article>
@@ -72,8 +82,12 @@
           <p class="quote">
             "Lorem ipsum dolor sit amet consectetur adipisicing elit."
           </p>
-          <h4>LA NACIÓN</h4>
-          <a href="https://www.lanacion.com.ar/" target="_blank"
+          <h4 class="pressMedia">LA NACIÓN</h4>
+          <a
+            class="pressArticleAnchor"
+            href="https://www.lanacion.com.ar/"
+            target="_blank"
+            rel="noopener noreferrer"
             >Leé la nota acá</a
           >
         </article>
@@ -86,8 +100,12 @@
           <p class="quote">
             "Lorem ipsum dolor sit amet consectetur adipisicing elit."
           </p>
-          <h4>LA NACIÓN</h4>
-          <a href="https://www.lanacion.com.ar/" target="_blank"
+          <h4 class="pressMedia">LA NACIÓN</h4>
+          <a
+            class="pressArticleAnchor"
+            href="https://www.lanacion.com.ar/"
+            target="_blank"
+            rel="noopener noreferrer"
             >Leé la nota acá</a
           >
         </article>
@@ -100,8 +118,12 @@
           <p class="quote">
             "Lorem ipsum dolor sit amet consectetur adipisicing elit."
           </p>
-          <h4>LA NACIÓN</h4>
-          <a href="https://www.lanacion.com.ar/" target="_blank"
+          <h4 class="pressMedia">LA NACIÓN</h4>
+          <a
+            class="pressArticleAnchor"
+            href="https://www.lanacion.com.ar/"
+            target="_blank"
+            rel="noopener noreferrer"
             >Leé la nota acá</a
           >
         </article>
@@ -114,8 +136,12 @@
           <p class="quote">
             "Lorem ipsum dolor sit amet consectetur adipisicing elit."
           </p>
-          <h4>LA NACIÓN</h4>
-          <a href="https://www.lanacion.com.ar/" target="_blank"
+          <h4 class="pressMedia">LA NACIÓN</h4>
+          <a
+            class="pressArticleAnchor"
+            href="https://www.lanacion.com.ar/"
+            target="_blank"
+            rel="noopener noreferrer"
             >Leé la nota acá</a
           >
         </article>
@@ -128,8 +154,12 @@
           <p class="quote">
             "Lorem ipsum dolor sit amet consectetur adipisicing elit."
           </p>
-          <h4>LA NACIÓN</h4>
-          <a href="https://www.lanacion.com.ar/" target="_blank"
+          <h4 class="pressMedia">LA NACIÓN</h4>
+          <a
+            class="pressArticleAnchor"
+            href="https://www.lanacion.com.ar/"
+            target="_blank"
+            rel="noopener noreferrer"
             >Leé la nota acá</a
           >
         </article>
@@ -142,8 +172,12 @@
           <p class="quote">
             "Lorem ipsum dolor sit amet consectetur adipisicing elit."
           </p>
-          <h4>LA NACIÓN</h4>
-          <a href="https://www.lanacion.com.ar/" target="_blank"
+          <h4 class="pressMedia">LA NACIÓN</h4>
+          <a
+            class="pressArticleAnchor"
+            href="https://www.lanacion.com.ar/"
+            target="_blank"
+            rel="noopener noreferrer"
             >Leé la nota acá</a
           >
         </article>
@@ -156,8 +190,12 @@
           <p class="quote">
             "Lorem ipsum dolor sit amet consectetur adipisicing elit."
           </p>
-          <h4>LA NACIÓN</h4>
-          <a href="https://www.lanacion.com.ar/" target="_blank"
+          <h4 class="pressMedia">LA NACIÓN</h4>
+          <a
+            class="pressArticleAnchor"
+            href="https://www.lanacion.com.ar/"
+            target="_blank"
+            rel="noopener noreferrer"
             >Leé la nota acá</a
           >
         </article>
@@ -170,27 +208,44 @@
           <p class="quote">
             "Lorem ipsum dolor sit amet consectetur adipisicing elit."
           </p>
-          <h4>LA NACIÓN</h4>
-          <a href="https://www.lanacion.com.ar/" target="_blank"
+          <h4 class="pressMedia">LA NACIÓN</h4>
+          <a
+            class="pressArticleAnchor"
+            href="https://www.lanacion.com.ar/"
+            target="_blank"
+            rel="noopener noreferrer"
             >Leé la nota acá</a
           >
         </article>
       </section>
     </main>
     <footer>
-      <p>Copyright 2021. En El Aire. Todos los derechos reservados.</p>
-      <a
-        href="https://www.youtube.com/channel/UCRuW6Tz9E4fczGNhjI15z5A"
-        target="_blank"
-      >
-        <img class="socialIcon" src="../images/youtubeicon.png" />
-      </a>
-      <a href="https://www.instagram.com/enelaire.tv/" target="_blank">
-        <img class="socialIcon" src="../images/instagramicon.png" />
-      </a>
-      <a href="https://www.twitch.tv/enelaire" target="_blank">
-        <img class="socialIcon" src="../images/twitchicon.png" />
-      </a>
+      <div id="copyrightFooter">
+        <p>Copyright 2021. En El Aire. Todos los derechos reservados.</p>
+      </div>
+      <div id="socialFooter">
+        <a
+          href="https://www.youtube.com/channel/UCRuW6Tz9E4fczGNhjI15z5A"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img class="socialIcon" src="../images/youtubeicon.png" />
+        </a>
+        <a
+          href="https://www.instagram.com/enelaire.tv/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img class="socialIcon" src="../images/instagramicon.png" />
+        </a>
+        <a
+          href="https://www.twitch.tv/enelaire"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img class="socialIcon" src="../images/twitchicon.png" />
+        </a>
+      </div>
     </footer>
   </body>
 </html>

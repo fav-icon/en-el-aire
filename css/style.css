@@ -1,8 +1,8 @@
 /* General */
 body {
   font-family: "Atkinson Hyperlegible", sans-serif;
-  margin: 0;
   color: white;
+  margin: 0;
   background-color: rgb(51, 51, 51);
 }
 
@@ -10,43 +10,143 @@ a {
   text-decoration: none;
 }
 
+.socialIcon {
+  width: 1.7em;
+}
+
+h2 {
+  margin-bottom: 2em;
+}
+
 /* Header */
 header {
   background-color: rgb(255, 133, 255);
-  padding: 2em 5em;
+  padding: 1em 10em;
+  display: flex;
+  justify-content: space-between;
+}
+
+#logoContainer {
+  display: flex;
+  align-items: center;
 }
 
 #logo {
   width: 7em;
 }
+
+header nav {
+  display: flex;
+  justify-content: end;
+}
+
+nav ul {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
 .navLi {
-  list-style-type: none;
+  display: inline-block;
+  position: relative;
+  font-size: 1em;
+  padding: 0.5em;
+}
+
+.dropDownList {
+  position: absolute;
+  display: none;
+  padding: 0.5em 0.5em 0em 0.5em;
+}
+
+.dropDownList li {
+  display: block;
+  font-size: 0.8em;
+  padding-bottom: 0.3em;
+}
+
+.dropDownList li a {
+  color: rgb(255, 133, 255);
+}
+
+.navLi:hover ul {
+  display: block;
+  background-color: white;
 }
 
 .navLi a {
   color: white;
 }
 
-.socialIcon {
-  width: 2em;
+.twitchButton {
+  background-color: blue;
+  padding: 0.5em 2em;
+  border-radius: 0.4em;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+/* Main */
+main {
+  padding: 0em 10em;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 133, 255);
+  padding: 1em 10em;
+  margin-top: 4em;
+  color: white;
+}
+
+#copyrightFooter p {
+  font-size: 0.8em;
+  margin: 0em;
+}
+
+#socialFooter {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 1em;
+  align-items: center;
+}
+
+/* Index */
+
+#welcomeSection {
+  margin: 4em 0em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 h1 {
   font-size: 3em;
   letter-spacing: 0.2em;
+  margin: 0em;
 }
 
-/* Footer */
-footer {
-  background-color: rgb(255, 133, 255);
-  padding: 2em 5em;
-  color: white;
+.goLive {
+  display: inline;
 }
 
-/* Index */
-article {
-  width: 12em;
-  margin: 1em 2em;
+.articlesSection {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 1em;
+  justify-content: space-between;
+}
+
+.indexArticle {
+  display: block;
+  text-align: center;
+  padding: 0.5em;
+  border: solid 0.1em white;
 }
 
 .teamProfile {
@@ -74,16 +174,27 @@ h5 {
   font-style: italic;
 }
 
-section article p {
+.indexArticle p {
   font-size: 1em;
   margin: 0.1em;
   text-align: center;
 }
 
-/* Socialmedia */
+/* Calendar */
+
+#calendarSection {
+  display: flex;
+  justify-content: center;
+}
+
+.program {
+  background-color: rgba(255, 133, 255, 0.5);
+  border-radius: 0.4em;
+}
+
 table {
+  margin: 4em 0em;
   border: none;
-  font-size: 0.8em;
 }
 
 th {
@@ -94,5 +205,96 @@ th {
 }
 
 td {
+  text-align: center;
   border: none;
+}
+
+/* Socialmedia */
+
+.socialMediaSection {
+  margin-bottom: 4em;
+}
+
+.socialMediaSection h3 {
+  margin: 1em 0em;
+}
+
+.socialMediaSection div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.instagramPost {
+  width: 30%;
+}
+
+.instagramPostImage {
+  width: 100%;
+}
+
+/* Press */
+
+.pressArticleSection {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 2em;
+}
+
+.pressArticle {
+  background-color: white;
+  padding: 1em 2em;
+  position: relative;
+  margin-left: 1.5em;
+}
+
+.pressIcon {
+  position: absolute;
+  z-index: 1;
+  top: -1.5em;
+  left: -1.5em;
+}
+
+.quote {
+  font-style: oblique;
+  color: rgb(51, 51, 51);
+  font-size: 1.1em;
+}
+
+.pressMedia {
+  text-align: left;
+  color: rgb(51, 51, 51);
+  margin: 0em;
+}
+
+.pressArticleAnchor {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+/* Merch */
+
+#store {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 1em;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4em;
+}
+
+.merchArticle {
+  display: block;
+  text-align: center;
+}
+
+.merchArticle h3 {
+  margin: 0em;
+}
+
+.articleImg {
+  width: 10em;
+}
+
+#raffle {
+  display: inline-block;
 }

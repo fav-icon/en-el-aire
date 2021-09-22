@@ -15,11 +15,9 @@
   </head>
   <body>
     <header>
-      <div>
-        <a href="../index.html">
-          <img id="logo" src="../images/logo.png" />
-        </a>
-      </div>
+      <a id="logoContainer" href="../index.html">
+        <img id="logo" src="../images/logo.png" />
+      </a>
       <nav>
         <ul>
           <li class="navLi">
@@ -36,9 +34,18 @@
           </li>
           <li class="navLi">
             <a href="merch.html">MERCH</a>
+            <ul class="dropDownList">
+              <li><a href="merch.html#store">TIENDA</a></li>
+              <li><a href="merch.html#raffle">SORTEO</a></li>
+            </ul>
           </li>
           <li class="navLi">
-            <a href="https://www.twitch.tv/enelaire" target="_blank">
+            <a
+              class="twitchButton"
+              href="https://www.twitch.tv/enelaire"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img class="socialIcon" src="../images/twitchicon.png" />
             </a>
           </li>
@@ -47,64 +54,105 @@
     </header>
     <main>
       <h2>SEGUINOS EN REDES</h2>
-      <section>
+      <section class="socialMediaSection">
         <h3>
-          <a href="https://www.instagram.com/enelaire.tv/" target="_blank"
+          <a
+            href="https://www.instagram.com/enelaire.tv/"
+            target="_blank"
+            rel="noopener noreferrer"
             >@enelaire.tv</a
           >
           en Instagram
         </h3>
-        <a href="https://www.instagram.com/p/CR4vTcVA2HM/" target="_blank"
-          ><img src="../images/redes_instagram_preview_1.jpg" width="350px"
-        /></a>
-        <a href="https://www.instagram.com/p/CRmyTuhAckc/" target="_blank"
-          ><img src="../images/redes_instagram_preview_2.jpg" width="350px"
-        /></a>
-        <a href="https://www.instagram.com/p/CRUqhJQgliu/" target="_blank"
-          ><img src="../images/redes_instagram_preview_3.jpg" width="350px"
-        /></a>
+        <div>
+          <a
+            class="instagramPost"
+            href="https://www.instagram.com/p/CR4vTcVA2HM/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              class="instagramPostImage"
+              src="../images/redes_instagram_preview_1.jpg"
+          /></a>
+          <a
+            class="instagramPost"
+            href="https://www.instagram.com/p/CRmyTuhAckc/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              class="instagramPostImage"
+              src="../images/redes_instagram_preview_2.jpg"
+          /></a>
+          <a
+            class="instagramPost"
+            href="https://www.instagram.com/p/CRUqhJQgliu/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              class="instagramPostImage"
+              src="../images/redes_instagram_preview_3.jpg"
+          /></a>
+        </div>
       </section>
-      <section>
+      <section class="socialMediaSection">
         <h3>
-          <a href="https://www.instagram.com/enelaire.tv/" target="_blank"
+          <a
+            href="https://www.instagram.com/enelaire.tv/"
+            target="_blank"
+            rel="noopener noreferrer"
             >enelaire</a
           >
           en Youtube
         </h3>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/WgyhNwFX_zE"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/9kPy1bn15U8"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+        <div>
+          <iframe
+            width="530"
+            height="299"
+            src="https://www.youtube.com/embed/WgyhNwFX_zE"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="530"
+            height="299"
+            src="https://www.youtube.com/embed/9kPy1bn15U8"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
       </section>
     </main>
     <footer>
-      <p>Copyright 2021. En El Aire. Todos los derechos reservados.</p>
-      <a
-        href="https://www.youtube.com/channel/UCRuW6Tz9E4fczGNhjI15z5A"
-        target="_blank"
-      >
-        <img class="socialIcon" src="../images/youtubeicon.png" />
-      </a>
-      <a href="https://www.instagram.com/enelaire.tv/" target="_blank">
-        <img class="socialIcon" src="../images/instagramicon.png" />
-      </a>
-      <a href="https://www.twitch.tv/enelaire" target="_blank">
-        <img class="socialIcon" src="../images/twitchicon.png" />
-      </a>
+      <div id="copyrightFooter">
+        <p>Copyright 2021. En El Aire. Todos los derechos reservados.</p>
+      </div>
+      <div id="socialFooter">
+        <a
+          href="https://www.youtube.com/channel/UCRuW6Tz9E4fczGNhjI15z5A"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img class="socialIcon" src="../images/youtubeicon.png" />
+        </a>
+        <a
+          href="https://www.instagram.com/enelaire.tv/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img class="socialIcon" src="../images/instagramicon.png" />
+        </a>
+        <a
+          href="https://www.twitch.tv/enelaire"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img class="socialIcon" src="../images/twitchicon.png" />
+        </a>
+      </div>
     </footer>
   </body>
 </html>
