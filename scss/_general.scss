@@ -24,3 +24,14 @@ h2 {
 main {
   padding: 0em 1em;
 }
+
+$font-weights: (
+  "light": 100,
+  "bold": 300,
+);
+
+@each $weight, $value in $font-weights {
+  .font_weight_#{$weight} {
+    font-weight: $value;
+  }
+}
