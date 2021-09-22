@@ -1,0 +1,104 @@
+#welcomeSection {
+  margin: 1em 0em;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#welcomeSection div {
+  margin-bottom: 1em;
+}
+
+h1 {
+  font-family: Monument;
+  font-weight: 100;
+  font-size: 2em;
+  letter-spacing: 0.2em;
+  margin: 0em;
+}
+
+.goLive {
+  font-family: Monument;
+  font-weight: 100;
+  display: block;
+  text-align: center;
+}
+
+.goLive:hover {
+  transition: all 0.3s;
+  transform: translate(0em, -0.3em) scale(1.02);
+}
+
+.goLiveBootstrap {
+  font-family: Monument;
+  font-weight: 100;
+  color: black;
+  text-align: center;
+  background-color: $secondarycolor;
+  border: none;
+  padding: 0.5em 2em;
+}
+
+.downloadTwitch {
+  padding: 0.5em 2em;
+  margin-left: 0.5em;
+}
+
+#welcomeSection iframe {
+  width: 100%;
+  height: 225px;
+}
+
+.articlesSection {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-gap: 1em;
+}
+
+.indexArticle {
+  display: block;
+  text-align: center;
+  padding: 0.5em;
+  p {
+    font-size: 1em;
+    margin: 0.1em;
+    text-align: center;
+  }
+}
+
+.teamProfile {
+  width: 8em;
+}
+.teamProfile:hover {
+  transition: all 0.3s;
+  transform: translate(0em, -0.3em) scale(1.02);
+}
+
+h3 {
+  font-family: Monument;
+  font-weight: 100;
+  font-size: 1em;
+  margin: 0.1em;
+  text-align: center;
+  text-transform: uppercase;
+  color: $secondarycolor;
+}
+
+h4 {
+  font-family: Monument;
+  font-weight: 100;
+  font-size: 1em;
+  margin: 0.1em;
+  text-align: center;
+}
+
+h5 {
+  font-size: 1em;
+  margin: 0.1em;
+  text-align: center;
+}
+
+p {
+  font-size: 1.5em;
+}

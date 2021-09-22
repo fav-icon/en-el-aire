@@ -1,0 +1,35 @@
+/* Socialmedia */
+
+.socialMediaSection {
+  margin-bottom: 4em;
+  h3 {
+    margin: 1em 0em;
+    color: black;
+    font-size: 1em;
+    a {
+      background-color: $secondarycolor;
+      border-radius: 0.4em;
+      padding: 0.4em 0.8em;
+    }
+  }
+}
+
+.InstagramDiv {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 1em;
+}
+
+.YoutubeDiv {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 1em;
+}
+
+.YoutubeDiv iframe {
+  width: 100%;
+}
+
+.instagramPostImage {
+  width: 100%;
+}

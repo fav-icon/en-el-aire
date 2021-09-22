@@ -1,0 +1,188 @@
+/* ----MediaQueries---- */
+
+/* --Tablet-- */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Header */
+  header {
+    padding: 1.5em;
+  }
+
+  .navLi {
+    font-size: 1em;
+  }
+
+  /* Footer */
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      margin: 0em;
+      text-align: left;
+    }
+    div {
+      grid-gap: 1em;
+      a {
+        margin: 0em;
+      }
+    }
+  }
+
+  /* Index */
+  #welcomeSection {
+    display: flex;
+    iframe {
+      width: 400px;
+      height: 225px;
+    }
+  }
+
+  .goLive {
+    display: inline-block;
+  }
+
+  .articlesSection {
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+  }
+
+  /* Calendar */
+
+  .calendarMobile {
+    display: none;
+  }
+
+  table {
+    display: table;
+  }
+
+  /* SocialMedia */
+  .YoutubeDiv {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1em;
+  }
+
+  /* Press */
+
+  .pressSection {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 2em;
+  }
+
+  /* Merch */
+  #store {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 1em;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4em;
+  }
+}
+
+/* --Desktop-- */
+@media (min-width: 992px) {
+  /* Header */
+  header {
+    padding: 1em 10em;
+  }
+
+  #logo {
+    width: 7em;
+  }
+
+  .navLi {
+    font-size: 1em;
+  }
+
+  /* Main */
+  main {
+    padding: 0em 10em;
+  }
+
+  /* Footer */
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0em 10em 2em 10em;
+    margin-top: 4em;
+    p {
+      margin: 0em;
+      text-align: left;
+    }
+    #socialFooter {
+      grid-gap: 1em;
+      a {
+        margin: 0em;
+      }
+    }
+  }
+
+  /* Index */
+  #welcomeSection {
+    margin: 4em 0em;
+    display: flex;
+    div {
+      margin-bottom: 0em;
+    }
+    iframe {
+      width: 560px;
+      height: 315px;
+    }
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  .goLive {
+    display: inline-block;
+  }
+
+  .articlesSection {
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  /* Calendar */
+
+  .calendarMobile {
+    display: none;
+  }
+
+  table {
+    display: table;
+  }
+
+  /* SocialMedia */
+  .YoutubeDiv {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1em;
+  }
+
+  /* Press */
+
+  .pressSection {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 2em;
+  }
+
+  /* Merch */
+  #store {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 1em;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4em;
+  }
+}

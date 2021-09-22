@@ -1,0 +1,36 @@
+/* Press */
+
+.pressSection {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 2em;
+  article {
+    padding: 1em 2em;
+    position: relative;
+    margin-left: 1.5em;
+    border: 0.2em solid $lightprimarycolor;
+    border-radius: 0.4em;
+    img {
+      position: absolute;
+      z-index: 1;
+      top: -1.5em;
+      left: -1.5em;
+    }
+    p {
+      font-style: oblique;
+      color: rgb(51, 51, 51);
+      font-size: 1.1em;
+    }
+    h4 {
+      text-align: left;
+      color: rgb(0, 0, 0);
+      margin: 1em 0em;
+    }
+    a {
+      font-size: 0.8em;
+      background-color: $secondarycolor;
+      border-radius: 0.4em;
+      padding: 0.2em 0.6em;
+    }
+  }
+}

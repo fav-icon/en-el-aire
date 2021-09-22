@@ -1,0 +1,99 @@
+header {
+  background-image: linear-gradient($primarycolor, #fcfcfc00);
+  padding: 1em;
+  display: flex;
+  align-items: flex-start;
+  height: 5em;
+  justify-content: space-between;
+  font-family: Monument;
+  font-weight: 100;
+}
+
+.header__navbar {
+  display: flex;
+  justify-content: end;
+  ul {
+    margin: 0em 0em 0em 1em;
+    padding: 0em;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.navbar__item {
+  display: inline-block;
+  position: relative;
+  font-size: 0.5em;
+  padding: 0.2em;
+  margin: 0em 0.2em;
+  a {
+    color: $darkbasecolor;
+    background-color: none;
+    text-decoration: none;
+  }
+}
+
+#logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  width: 5.5em;
+}
+
+.navLi:hover {
+  border-bottom: 0.15em solid $darkbasecolor;
+}
+
+.active {
+  font-weight: bold;
+}
+
+/* .dropDownList {
+  position: absolute;
+  display: none;
+  margin: 0em;
+}
+
+.dropDownList li {
+  display: block;
+  font-size: 0.6em;
+  padding: 0.6em;
+  text-align: center;
+}
+.dropDownList li:hover {
+  border-bottom: 0.15em solid $darkbasecolor:;
+}
+
+.dropDownList li a {
+  color: $darkbasecolor:;
+  font-size: 1.2em;
+  font-weight: 300;
+} */
+
+.navLi:hover ul {
+  display: block;
+  top: 1.7em;
+}
+
+.twitchButtonLi {
+  display: inline-block;
+  position: relative;
+  font-size: 0.8em;
+  margin: 0em 0.2em;
+}
+
+.twitchButton {
+  background-color: $secondarycolor;
+  padding: 0.7em 2.5em;
+  border-radius: 0.4em;
+  display: flex;
+  align-items: center;
+  color: $darkbasecolor;
+}
+
+.twitchButton:hover {
+  transition: all 0.3s;
+  transform: translate(0em, -0.3em) scale(1.02);
+}
