@@ -7,6 +7,7 @@ header {
   justify-content: space-between;
   font-family: Monument;
   font-weight: 100;
+  box-sizing: border-box;
 }
 
 .header__navbar {
@@ -40,6 +41,11 @@ header {
 
 #logo {
   width: 5.5em;
+  display: none;
+}
+
+#logoMobile {
+  width: 2.5em;
 }
 
 .navLi:hover {
@@ -49,28 +55,6 @@ header {
 .active {
   font-weight: bold;
 }
-
-/* .dropDownList {
-  position: absolute;
-  display: none;
-  margin: 0em;
-}
-
-.dropDownList li {
-  display: block;
-  font-size: 0.6em;
-  padding: 0.6em;
-  text-align: center;
-}
-.dropDownList li:hover {
-  border-bottom: 0.15em solid $darkbasecolor:;
-}
-
-.dropDownList li a {
-  color: $darkbasecolor:;
-  font-size: 1.2em;
-  font-weight: 300;
-} */
 
 .navLi:hover ul {
   display: block;
@@ -86,7 +70,7 @@ header {
 
 .twitchButton {
   background-color: $secondarycolor;
-  padding: 0.7em 2.5em;
+  padding: 0.7em 0.7em;
   border-radius: 0.4em;
   display: flex;
   align-items: center;

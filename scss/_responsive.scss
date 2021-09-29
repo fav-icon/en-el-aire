@@ -11,6 +11,18 @@
     font-size: 1em;
   }
 
+  #logoMobile {
+    display: none;
+  }
+
+  #logo {
+    display: block;
+  }
+
+  .twitchButton {
+    padding: 0.7em 2.5em;
+  }
+
   /* Footer */
   footer {
     display: flex;
@@ -90,11 +102,20 @@
   }
 
   #logo {
+    display: block;
     width: 7em;
+  }
+
+  #logoMobile {
+    display: none;
   }
 
   .navLi {
     font-size: 1em;
+  }
+
+  .twitchButton {
+    padding: 0.7em 2.5em;
   }
 
   /* Main */
