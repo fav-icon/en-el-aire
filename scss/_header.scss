@@ -11,13 +11,13 @@ header {
 }
 
 .header__navbar {
-  display: flex;
-  justify-content: end;
+  flex-grow: 2;
   ul {
     margin: 0em 0em 0em 1em;
     padding: 0em;
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 }
 
@@ -35,8 +35,7 @@ header {
 }
 
 #logoContainer {
-  display: flex;
-  align-items: center;
+  flex-grow: 1;
 }
 
 #logo {
