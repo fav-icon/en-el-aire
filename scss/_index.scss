@@ -9,12 +9,13 @@
   margin-bottom: 1em;
 }
 
-h1 {
+.main_title {
   font-family: Monument;
   font-weight: 100;
   font-size: 2em;
   letter-spacing: 0.2em;
   margin: 0em;
+  text-align: left;
 }
 
 .goLive {
@@ -54,6 +55,7 @@ h1 {
   grid-template-columns: auto auto;
   grid-template-rows: auto auto auto auto auto auto;
   grid-gap: 1em;
+  margin-bottom: 2em;
 }
 
 .indexArticle {
@@ -75,30 +77,16 @@ h1 {
   transform: translate(0em, -0.3em) scale(1.02);
 }
 
-h3 {
+h2 {
   font-family: Monument;
   font-weight: 100;
   font-size: 1em;
-  margin: 0.1em;
+  margin: 0.4em 0.1em;
   text-align: center;
   text-transform: uppercase;
   color: $secondarycolor;
 }
 
-h4 {
-  font-family: Monument;
-  font-weight: 100;
-  font-size: 1em;
-  margin: 0.1em;
-  text-align: center;
-}
-
-h5 {
-  font-size: 1em;
-  margin: 0.1em;
-  text-align: center;
-}
-
 p {
-  font-size: 1.5em;
+  font-size: 1em;
 }

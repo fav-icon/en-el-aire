@@ -10,6 +10,8 @@
     margin-left: 1.5em;
     border: 0.2em solid $lightprimarycolor;
     border-radius: 0.4em;
+    display: flex;
+    flex-direction: column;
     img {
       position: absolute;
       z-index: 1;
@@ -17,20 +19,22 @@
       left: -1.5em;
     }
     p {
-      font-style: oblique;
       color: rgb(51, 51, 51);
-      font-size: 1.1em;
+      font-size: 0.9em;
+      height: 100%;
     }
-    h4 {
-      text-align: left;
-      color: rgb(0, 0, 0);
+    h2 {
+      color: $secondarycolor;
       margin: 1em 0em;
     }
     a {
-      font-size: 0.8em;
+      font-size: 1em;
       background-color: $secondarycolor;
       border-radius: 0.4em;
-      padding: 0.2em 0.6em;
+      padding: 0.4em 0.6em;
+      text-align: center;
+      text-transform: lowercase;
+      color: white;
     }
   }
 }

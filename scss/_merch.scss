@@ -3,7 +3,7 @@
 #store {
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-rows: auto auto;
   grid-gap: 1em;
   article {
     display: block;
@@ -14,11 +14,20 @@
       }
     }
     h3 {
-      margin: 0em;
+      margin: 1em;
+      font-size: 1em;
+    }
+    p {
+      font-size: 0.8em;
+    }
+    .buyButton {
+      font-size: 1em;
+      background-color: $secondarycolor;
+      border-radius: 0.4em;
+      padding: 0.4em 0.6em;
+      text-align: center;
+      text-transform: lowercase;
+      color: white;
     }
   }
-}
-
-#raffle {
-  display: none;
 }

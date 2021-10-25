@@ -1,8 +1,9 @@
 body {
-  font-family: ArnoPro;
+  font-family: Neuemontreal;
   color: $darkbasecolor;
   margin: 0;
   background-color: white;
+  height: 100%;
 }
 
 a {
@@ -14,10 +15,24 @@ a {
   width: 1.7em;
 }
 
-h2 {
+h1 {
   font-family: Monument;
   font-weight: 100;
   margin-bottom: 2em;
+  text-align: center;
+}
+
+h3 {
+  font-family: Monument;
+  font-weight: 100;
+  font-size: 0.7em;
+  margin: 0.1em;
+  text-align: center;
+}
+
+h4 {
+  font-size: 1em;
+  margin: 0.1em;
   text-align: center;
 }
 
@@ -27,7 +42,8 @@ main {
 
 $font-weights: (
   "light": 100,
-  "bold": 300,
+  "regular": 300,
+  "bold": 500,
 );
 
 @each $weight, $value in $font-weights {
